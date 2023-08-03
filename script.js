@@ -59,6 +59,7 @@ function clearCart() {
   sessionStorage.removeItem("cart");
   renderCart();
 }
+clearCartBtn.addEventListener('click', clearCart);
 
 // Initial render
 productList.addEventListener('click', (event)=>{
